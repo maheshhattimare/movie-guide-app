@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 4%;
+}
+.navbar .logo h2::first-letter {
+  color: red;
+  font-size: 40px;
+}
+.navbar .search-container input,
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.navbar .search-container input {
+  border-radius: 4px 0px 0px 4px;
+}
+.navbar .search-container button {
+  background-color: yellow;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+/* main content start  */
+main {
+  max-width: 1200px;
+  /* background-color: gainsboro; */
+  margin: 0px auto;
+  margin-block: 38px;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72vh;
+}
+.movie-container {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 5px;
+  width: 80%;
+}
+.movie-poster img {
+  height: 100%;
+  margin-right: 30px;
+  border-radius: 5px 0 0 5px;
+}
+.movie-info {
+  padding-inline: 15px;
+}
+.movie-info h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0px 12px 0px;
+}
+.movie-info h2 + p {
+  text-align: center;
+}
+.movie-info .movie-genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 5px;
+  overflow-x: auto;
+}
+.movie-info .movie-genre p {
+  background: #232f3e;
+  color: #fff;
+  padding: 5px 14px;
+  margin-inline: 5px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.movie-info p {
+  font-size: 18px;
+  margin-block: 16px;
+  line-height: 24px;
+}
+.movie-container.noBackground {
+  background: none;
+  box-shadow: none;
+  align-items: center;
+}
+/* footer  */
+footer {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+}
+/* responsive code*/
+@media screen and (max-width: 950px) {
+  .movie-container {
+    flex-direction: column;
+  }
+  .movie-poster img {
+    width: 100%;
+    height: fit-content;
+    margin-right: 0px;
+  }
+  .movie-info {
+    padding-inline: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-container {
+    margin-top: 12px;
+  }
+}
