@@ -6,7 +6,7 @@ const movieContainer = document.querySelector(".movie-container");
 const getMovieInfo = async (movie) => {
   try {
     const apiKey = "7aa9bc95";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${movie}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${movie}`;
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error("Unable to fetch movie data.");
