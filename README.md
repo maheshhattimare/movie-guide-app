@@ -1,14 +1,55 @@
-# Movie Guide App
+# 🎬 CineScope – A Movie Discovery App
 
-A simple and interactive movie guide application built with HTML, CSS, and JavaScript. Movies are fetched from an API. This app allows users to search for movies by name. The search query is added to the API URL, and the results are displayed on the frontend.
+CineScope is a sleek and responsive movie discovery app built using React and Tailwind CSS. It allows users to search for movies and view dynamic results with an engaging UI.
 
-## Visit the Website
+## 🔗 Live Demo
 
-[Movie Guide Application](https://maheshhattimare.github.io/movie-guide-app/)
+[Visit CineScope](https://maheshhattimare.github.io/cine-scope/)
 
-## Technologies Used
+## ✨ Features
 
-- HTML
-- CSS
-- JavaScript
-- API (for fetching movie data)
+- Search for movies using keywords
+- Fetch real-time movie data from API
+- Custom error handling
+- Stylish, responsive user interface
+
+## 🛠️ Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript (ES6+)
+- Movie API
+
+## 🖼️ Screenshots
+
+![Interface](./public/screenshots/interface.png)
+![Result](./public/screenshots/result.png)
+
+## 🚀 Installation
+
+### Get Api Key from:
+
+https://www.omdbapi.com/
+
+### Add environment variables
+
+```bash
+cp .env.example .env
+```
+
+```env
+VITE_MOVIE_API_KEY=your_api_key
+```
+
+```bash
+git clone https://github.com/maheshhattimare/CineScope.git
+cd CineScope
+npm install
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+<div align="center">
+Made with ❤️ by [Mahesh Hattimare](https://maheshhattimare.vercel.app/) 
+</div>
