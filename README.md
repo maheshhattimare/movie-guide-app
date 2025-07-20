@@ -4,7 +4,7 @@ CineScope is a sleek and responsive movie discovery app built using React and Ta
 
 ## 🔗 Live Demo
 
-[Visit CineScope](https://maheshhattimare.github.io/cine-scope/)
+[Visit CineScope](https://cine-scopee.vercel.app/)
 
 ## ✨ Features
 
